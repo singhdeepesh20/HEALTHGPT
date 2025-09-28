@@ -11,16 +11,16 @@ from langchain.chains import create_retrieval_chain
 from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 
-# Load environment variables
+
 load_dotenv()
 os.environ['HF_API_KEY'] = os.getenv("HF_API_KEY")
 os.environ['GROQ_API_KEY'] = os.getenv("GROQ_API_KEY")
 groq_api_key = os.getenv("GROQ_API_KEY")
 
-# Load LLM from Groq
+
 llm = ChatGroq(groq_api_key=groq_api_key, model_name="Llama3-8b-8192")
 
-# Prompt Template
+
 prompt = ChatPromptTemplate.from_template("""
 Answer the questions based on the provided context only.
 Please provide the most accurate response based on the question.
@@ -32,7 +32,7 @@ Please provide the most accurate response based on the question.
 Question: {input}
 """)
 
-# Function to create embeddings
+
 def create_vector_embedding():
     if "vectors" not in st.session_state:
         st.session_state.embeddings = HuggingFaceEmbeddings()
@@ -43,7 +43,7 @@ def create_vector_embedding():
         st.session_state.final_documents = st.session_state.text_splitter.split_documents(st.session_state.docs[:50])
         st.session_state.vectors = FAISS.from_documents(st.session_state.final_documents, st.session_state.embeddings)
 
-# ui for streamlit
+
 st.title("      HealthGPT      ")
 user_prompt = st.text_input("Enter your question")
 
