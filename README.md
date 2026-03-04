@@ -31,7 +31,8 @@
 ### 🔹 For Patients
 - Empowers patients with 24/7 health information access  
 - Promotes health literacy using plain-language explanations  
-- Bridges healthcare gaps in rural and underserved areas  
+- Bridges healthcare gaps in rural and underserved areas
+- Easy to use and easy to understand 
 
 ### 🔹 For Hospitals
 - Reduces front desk workload with AI-powered triage  
