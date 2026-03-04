@@ -37,7 +37,8 @@
 ### 🔹 For Hospitals
 - Reduces front desk workload with AI-powered triage  
 - Automates repetitive health queries  
-- Collects basic symptoms before doctor consultation  
+- Collects basic symptoms before doctor consultation
+- They have summary of all the patient report 
 
 ---
 How to Run
