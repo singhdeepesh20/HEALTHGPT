@@ -9,8 +9,7 @@
 ✅ Multilingual support for inclusive healthcare access  
 ✅ Explains diseases, prescriptions, symptoms in simple terms  
 ✅ Provides general health suggestions (non-diagnostic)  
-✅ Supports hospitals with pre-consultation triage and FAQs  
-✅ Built with modular, scalable architecture for future integration  
+✅ Supports hospitals with pre-consultation triage and FAQs   
 ✅ Easy-to-use UI built with Streamlit  
 
 ---
